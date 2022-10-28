@@ -1,0 +1,41 @@
+.features {
+   row-gap: 1.25rem;
+   margin-top: 1.75rem;
+   margin-bottom: 0.25rem;
+}
+
+.features__icon {
+   background: center / contain no-repeat;
+   width: 20px;
+   height: 20px;
+   display: inline-block;
+   margin-right: 0.8rem;
+}
+
+.features__icon--todo-list {
+   background-image: url(../../images/icon-todo.svg);
+}
+
+.features__icon--calendar {
+   background-image: url(../../images/icon-calendar.svg);
+}
+
+.features__icon--reminders {
+   background-image: url(../../images/icon-reminders.svg);
+}
+
+.features__icon--planning {
+   background-image: url(../../images/icon-planning.svg);
+}
+
+@media screen and (min-width: 1080px) {
+   .features {
+      row-gap: 0.9rem;
+      right: 0;
+   }
+
+   .features__icon {
+      width: 16px;
+      height: 16px;
+   }
+}

@@ -1,0 +1,32 @@
+.category {
+   margin-left: 1.25rem;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+.category__item__link {
+   color: var(--grey);
+   text-decoration: none;
+   font-size: 0.9rem;
+   display: flex;
+   align-items: flex-end;
+}
+
+@media screen and (min-width: 1080px) {
+   .category {
+      position: absolute;
+      margin-left: 0;
+      top: 0.3rem;
+      background-color: #FFF;
+      border-radius: 12px;
+      box-shadow: 0 10px 40px #70707046;
+      padding: 1.3rem;
+   }
+
+   .category__item__link {
+      font-size: 0.8rem;
+   }
+}
+
+

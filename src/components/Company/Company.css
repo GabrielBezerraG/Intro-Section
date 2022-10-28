@@ -1,0 +1,14 @@
+.company {
+   row-gap: 1.45rem;
+   margin-top: 1.5rem;
+   margin-bottom: 0.4rem;
+}
+
+@media screen and (min-width: 1080px) {
+   .company {
+      left: 0;
+      margin-top: 1.75rem;
+      row-gap: 0.9rem;
+      width: max-content;
+   }
+}

@@ -1,0 +1,146 @@
+.navbar {
+   background-color: var(--white);
+   position: absolute;
+   top: 0;
+   right: 0;
+   height: 100%;
+   width: 240px;
+   padding: 1.25rem 1rem 1rem 1.35rem;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+.navbar--invisible {
+   display: none;
+}
+
+.navbar__button {
+   background: url(../../images/icon-close-menu.svg) center / contain no-repeat;
+   width: 26px;
+   height: 26px;
+   align-self: flex-end;
+   margin-bottom: 1.8rem;
+}
+
+.navbar__list {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   margin-bottom: 0.75rem;
+}
+
+.navbar__item {
+   color: var(--grey);
+   margin-bottom: 1.45rem;
+   font-size: 0.9rem;
+   cursor: pointer;
+}
+
+.navbar__item__button {
+   color: inherit;
+   background-color: inherit;
+   padding: inherit; 
+}
+
+.navbar__item__text {
+   font-size: 0.9rem;
+}
+
+.navbar__item__button__icon {
+   display: inline-block;
+   background: center / contain no-repeat;
+   width: 10px;
+   height: 10px;
+   margin-left: 0.85rem;
+}
+
+.navbar__item__button__icon--open {
+   background-image: url(../../images/icon-arrow-up.svg);
+}
+
+.navbar__item__button__icon--closed {
+   background-image: url(../../images/icon-arrow-down.svg);
+}
+
+.navbar__login {
+   color: var(--grey);
+   font-size: 0.8rem;
+   align-self: center;
+   margin-bottom: 1rem;
+   text-decoration: none;
+}
+
+.navbar__register {
+   color: var(--grey);
+   font-size: 0.8rem;
+   align-self: stretch;
+   text-align: center;
+   text-decoration: none;
+   border: 2px solid var(--border-grey);
+   border-radius: 12px;
+   padding: 0.6rem 0.5rem;
+}
+
+.navbar__item__text:hover, .navbar__login:hover, .navbar__register:hover {
+   color: var(--black);
+}
+
+.navbar__register:hover {
+   border-color: var(--black);
+}
+
+@media screen and (min-width: 1080px) {
+   .navbar {
+      position: static;
+      flex-direction: row;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0;
+      align-items: center;
+   }
+
+   .navbar--invisible {
+      display: flex;
+   }
+
+   .navbar__button {
+      display: none;
+   }
+
+   .navbar__list {
+      flex-direction: row;
+      align-items: center;
+      column-gap: 2.15rem;
+      margin: 0;
+   }
+   
+   .navbar__item {
+      position: relative;
+      margin: 0;
+   }
+   
+   .navbar__item__text {
+      font-size: 0.8rem;
+   }
+   
+   .navbar__item__button {
+      margin: 0;
+      font-size: inherit;
+   }
+
+   .navbar__item__button__icon {
+      margin-left: 0.4rem;
+   }
+
+   .navbar__login {
+      margin-bottom: 0;
+      margin-right: 2.25rem;
+   }
+
+   .navbar__register {
+      padding: 0.67rem 1.1rem;
+      align-self: auto;
+   }
+}

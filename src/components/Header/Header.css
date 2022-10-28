@@ -1,0 +1,32 @@
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+   margin-bottom: 1.25rem;
+}
+
+.header__button {
+   background: url(../../images/icon-menu.svg) center / contain no-repeat;
+   width: 32px;
+   height: 32px;
+}
+
+@media screen and (min-width: 1080px) {
+   .header {
+      align-items: center;
+      column-gap: 3.35rem;
+      margin-bottom: 1.35rem;
+   }
+
+   .header__logo {
+      margin-top: 0.4rem;
+   }
+
+   .header__button {
+      display: none;
+   }
+}
+
+
+
+
